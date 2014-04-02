@@ -1,0 +1,17 @@
+#!/bin/sh
+
+SCALA_VERSION=2.10.4
+SCALA_DEB=/tmp/scala-${SCALA_VERSION}.deb
+SBT_VERSION=0.13.1
+SBT_DEB=/tmp/sbt-${SBT_VERSION}.deb
+
+# Install SBT
+wget -nc http://repo.scala-sbt.org/scalasbt/sbt-native-packages/org/scala-sbt/sbt/${SBT_VERSION}/sbt.deb -O ${SBT_DEB}
+dpkg -i ${SBT_DEB}
+
+# Install Scala
+wget -nc http://www.scala-lang.org/files/archive/scala-${SCALA_VERSION}.deb -O ${SCALA_DEB}
+dpkg -i ${SCALA_DEB}
+
+apt-get install -f
+
