@@ -3,4 +3,5 @@
 # Configure Git
 git config --global user.name "shengmin"
 git config --global user.email "me@shengmin.me"
+git config --global color.ui true
 

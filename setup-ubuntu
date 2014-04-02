@@ -1,16 +1,6 @@
 #!/bin/sh
 
-# Add repositories
-add-apt-repository ppa:webupd8team/java
-apt-get update
-
 # Install Google Chrome
 wget -nc https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O /tmp/chrome-33.deb
 dpkg -i /tmp/chrome-33.deb
-
-# Install JDK 7
-apt-get install oracle-java7-installer
-apt-get install oracle-java7-set-default
-
-apt-get -f install
 

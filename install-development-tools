@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Add repositories
+add-apt-repository ppa:chris-lea/node.js
+add-apt-repository ppa:webupd8team/sublime-text-2
+add-apt-repository ppa:webupd8team/java
+apt-get update
+
+# Install Sublime Text
+apt-get install sublime-text
+
+# Install GCC
+apt-get install g++
+
+# Install JDK
+apt-get install oracle-java7-installer
+apt-get install oracle-java7-set-default
+
+# Install Node.js
+apt-get install nodejs
+
+# Install IDEA
+./install-idea
+
+# Install Scala
+./install-scala
+
+apt-get -f install
+
