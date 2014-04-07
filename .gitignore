@@ -1,3 +1,6 @@
 # General
 *~
-tmp/
+.tmp/
+.lib/
+.installed/
+.backup/

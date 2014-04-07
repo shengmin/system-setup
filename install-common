@@ -2,9 +2,19 @@
 
 CHROME_VERSION=33
 CHROME_DEB=/tmp/chrome-${CHROME_VERSION}.deb
+DROPBOX_VERSION=1.6.0
+DROPBOX_DEB=/tmp/dropbox-${DROPBOX_VERSION}.deb
 
 # Install Google Chrome
 if [ ! -f ${CHROME_DEB} ]; then
+    echo "Downloading and installing Google Chrome"
     wget -nc https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ${CHROME_DEB}
 	dpkg -i ${CHROME_DEB}
+fi
+
+# Install Dropbox
+if [ ! -f ${DROPBOX_DEB} ]; then
+    echo "Downloading and installing Dropbox"
+    wget "https://www.dropbox.com/download?dl=packages/debian/dropbox_${DROPBOX_VERSION}_amd64.deb" -O ${DROPBOX_DEB}
+    dpkg -i ${DROPBOX_DEB}
 fi

@@ -1,8 +1,0 @@
-#!/bin/sh
-
-# Install components
-sudo ./install-common
-sudo ./install-development-tools
-
-# Configure
-./configure

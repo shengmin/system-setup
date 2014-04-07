@@ -1,0 +1,2 @@
+PATH        DEFAULT=$HOME/bin:$PATH
+EDITOR      DEFAULT=sublime-text
