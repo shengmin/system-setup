@@ -1,0 +1,11 @@
+[user]
+	name = ShengMin Zhang
+  email = me@shengmin.me
+[color]
+  ui = true
+[merge]
+	tool = meld
+[credential]
+	helper = cache
+[core]
+	autrocrlf = input

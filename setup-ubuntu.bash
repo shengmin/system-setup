@@ -1,4 +1,5 @@
 #!/bin/bash
 
 ./setup-dart.bash
-./configure.bash
+pub get
+dart configure.dart

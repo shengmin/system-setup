@@ -1,6 +1,6 @@
 # General
 *~
-.tmp/
-.lib/
-.installed/
-.backup/
+*.lock
+
+# Dart
+packages/

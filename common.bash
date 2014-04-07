@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR_PROJECT=`pwd`
+DIR_PROJECT=~/project/system-setup
 DIR_TMP=~/tmp
 DIR_BIN=~/bin
 DIR_LIB=~/lib
