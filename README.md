@@ -1,5 +1,5 @@
 ### Prerequisites
-```shell
+```sh
 # Install Git
 sudo apt-get install git
 # Generate SSH key
@@ -11,7 +11,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ### Automatic Setup
-```shell
+```sh
 # Download, Install and Configure
 ./setup-ubuntu.bash
 ```
