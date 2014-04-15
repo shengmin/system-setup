@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source common.bash
+
 ./setup-dart.bash
-pub get
-dart configure.dart
+$DIR_BIN/pub get
+$DIR_BIN/dart configure.dart

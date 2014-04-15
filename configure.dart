@@ -18,13 +18,13 @@ void main() {
       new Link(link.link).delete();
     } else if (FileSystemEntity.isFileSync(link.link)) {
       // Back up the file
-      print('$YELLOW File ${link.link} exists$RESET');
+      print('${YELLOW}File ${link.link} exists$RESET');
       new File(link.link).renameSync(
         join(DIR_BACKUP, now + '-' + basename(link.link)));
     }
 
-    print('$GREEN Linking ${link.target}$RESET');
-    new Link(link.link).createSync(join(DIR_CONFIGURATION, link.target));
+    print('${GREEN}Linking ${link.target}$RESET');
+    new Link(link.link).createSync(join(DIR_CONFIGURATION, link.target), recursive: true);
   }
 }
 

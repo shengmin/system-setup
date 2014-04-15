@@ -1,5 +1,5 @@
 ### Prerequisites
-```sh
+```shell
 # Install Git
 sudo apt-get install git
 # Generate SSH key
@@ -11,7 +11,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 ### Automatic Setup
-```sh
+```shell
 # Download, Install and Configure
 ./setup-ubuntu.bash
 ```
@@ -19,12 +19,3 @@ cat ~/.ssh/id_rsa.pub
 ### Manual Setup
 - Install [Sublime Text Package Control plugin](https://sublime.wbond.net/installation)
 - Install [Sublime Text Dart plugin](https://github.com/dart-lang/dart-sublime-bundle#readme)
-
-### Individual Setup
-```sh
-# Set up Dart
-./setup-dart.bash
-pub get
-# Configure
-dart configure.dart
-```
