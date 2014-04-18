@@ -8,6 +8,8 @@ ssh-keygen -t rsa -C "me@shengmin.me"
 ssh-add ~/.ssh/id_rsa
 # Add public key to github.com and bitbucket.org
 cat ~/.ssh/id_rsa.pub
+# Clone the repository
+git clone git@github.com:shengmin/system-setup.git ~/system-setup
 ```
 
 ### Automatic Setup
